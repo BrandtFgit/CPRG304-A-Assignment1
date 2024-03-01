@@ -18,6 +18,10 @@ public class OctagonalPrism extends BaseGeometricShape
 		this.sideLength = sideLength;
 	}
 	
+	public double getSideLength() {
+		return this.sideLength;
+	}
+	
 	@Override
 	public double getBaseArea() {
 		return 2 * (1 + Math.sqrt(2))*Math.pow(sideLength, 2);

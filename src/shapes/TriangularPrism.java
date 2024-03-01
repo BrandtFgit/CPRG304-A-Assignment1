@@ -13,11 +13,15 @@ public class TriangularPrism extends BaseGeometricShape
      * @param height the height of the Triangular Prism
      * @param sideLength the side length of the Triangular Prism
      */
-	public TriangularPrism(double height) {
+	public TriangularPrism(double height, double sideLength) {
 		super(height);
-		
+		this.sideLength = sideLength;
 	}
-
+	
+	public double getSideLength() {
+		return this.sideLength;
+	}
+	
 	@Override
 	public double getBaseArea() {
 		return (Math.pow(sideLength, 2) * Math.sqrt(3))/4;

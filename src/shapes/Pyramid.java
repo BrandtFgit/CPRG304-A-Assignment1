@@ -18,6 +18,10 @@ public class Pyramid extends BaseGeometricShape
 		this.sideLength = sideLength;
 	}
 	
+	public double getSideLength() {
+		return this.sideLength;
+	}
+	
 	@Override
 	public double getBaseArea() {
 		return Math.pow(sideLength, 2);

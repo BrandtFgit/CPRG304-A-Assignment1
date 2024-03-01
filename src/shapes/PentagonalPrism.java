@@ -18,6 +18,10 @@ public class PentagonalPrism extends BaseGeometricShape
 		this.sideLength = sideLength;
 	}
 	
+	public double getSideLength() {
+		return this.sideLength;
+	}
+	
 	@Override
 	public double getBaseArea() {
 		return (5 * Math.pow(sideLength, 2) * Math.tan(Math.toRadians(54))) / 4;

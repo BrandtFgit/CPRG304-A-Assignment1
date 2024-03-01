@@ -31,7 +31,9 @@ public abstract class BaseGeometricShape implements Comparable<BaseGeometricShap
      */
     public abstract double getVolume();
 	
-    
+    public double getHeight() {
+    	return this.height;
+    }
     /**
      * Compares this shape with another based on their heights.
      *
@@ -41,6 +43,5 @@ public abstract class BaseGeometricShape implements Comparable<BaseGeometricShap
 	@Override
 	public int compareTo(BaseGeometricShape other) {
 		return Double.compare(this.height, other.height);
-	} 
-	
+	}
 }

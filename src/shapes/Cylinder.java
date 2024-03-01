@@ -18,6 +18,10 @@ public class Cylinder extends BaseGeometricShape
 		this.radius = radius;
 	}
 	
+	public double getRadius() {
+		return this.radius;
+	}
+	
 	@Override
 	public double getBaseArea() {
 		return Math.PI * Math.pow(radius, 2);
